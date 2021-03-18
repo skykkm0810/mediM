@@ -1,0 +1,38 @@
+<div class="wrap">
+  <h2 class="nanum">원 스탑 세이프 구역</h2>
+  <div class="placeBox">
+    <div *ngFor='let p of place'>
+      <img src="{{p.img}}" alt="/" (click)='up(p)'>
+      <div class="gage">
+        <p class="nanum"><span class="title">{{p.title}}</span><span class="remain">잔량<span
+              [style.color]='p.color'>{{p.percentage}}</span>%</span></p>
+        <p class="bar"><span [style.background-color]='p.color' [style.width]='p.percentage+"%"'></span></p>
+      </div>
+    </div>
+    <!-- <div class="placeB">
+            <img src="../../../assets/image/place2.png" alt="/">
+            <div class="gage">
+                <p class="nanum"><span class="title">구역B</span><span class="remain">잔량<span style="color:#FF9446;">50</span>%</span></p>
+                <p class="bar"><span style="background-color:#FF9446 ;width:50%;"></span></p>
+            </div>
+        </div>
+        <div class="placeC">
+            <img src="../../../assets/image/place3.png" alt="/">
+            <div class="gage">
+                <p class="nanum"><span class="title">구역C</span><span class="remain">잔량<span style="color:#1FB88A;">10</span>%</span></p>
+                <p class="bar"><span style="background-color:#1FB88A; width:10%;"></span></p>
+            </div>
+        </div> -->
+  </div>
+</div>
+<div class="btnBox">
+  <button mat-button class="nanum" (click)='marketOn()'>온라인 주문 요청하기</button>
+</div>
+<div class="show" *ngIf = 'title'>
+  <p class="title nanum" [style.color]='color'>{{title}}</p>
+  <span class="closeBtn" (click)='hide()'></span>
+  <img src="{{this.url}}" alt="/">
+  <p class="show_bar"><span class="gagebar" [style.background-color]='color' [style.width]='remain+"%"'></span></p>
+  <p class="show_remain nanum">잔량<span [style.color]='color'>{{remain}}</span>%</p>
+  <p class="alarm nanum" *ngIf = '30 > remain '>mediM 손 소독제를 교체해주세요</p>
+</div>

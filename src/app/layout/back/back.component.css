@@ -1,0 +1,15 @@
+#topback {
+    padding-top: 65px;
+}
+#topback .logo {
+    text-align: center;
+}
+#topback h1 {
+    margin:0;
+    padding-top: 40px;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color:#00A29A;
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+p {
+    text-indent: 15px;
+    margin:0;
+    color:#555555;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+.wrap {
+    padding-top: 75px;
+}
+.codeBox { 
+    padding-bottom: 16px;
+}
+.codeBox input{
+    border-radius: 8px;
+    
+}
+.codeBox p {
+    padding-bottom: 5px;
+}
+.loginBox {
+    background-color: #fff;
+    border-radius: 10px;
+    border:1px solid #c4c4c4;
+    box-sizing: border-box;
+    padding:8px 16px;
+}
+.loginBox div {
+    padding-bottom: 16px;
+    position: relative;
+}
+.loginBox div input {
+    border:0;
+    font-size: 16px;
+    line-height: 24px;
+    width:100%;
+    border-radius: 0;
+    border-bottom:1px solid #555555;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+.loginBox div input:focus {
+    outline: none;
+    border-color: #00A29A;
+}
+.loginBox div::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width:26px;
+    height:26px;
+    bottom:17px;
+}
+.loginBox div:nth-child(1)::before{
+    background: url(../../../assets/image/id.png) no-repeat center center / cover;
+}
+.loginBox div:nth-child(2)::before{
+    background: url(../../../assets/image/password.png) no-repeat center center / cover;
+}
+
+.loginBox div p {
+    padding-bottom: 5px;
+}
+button {
+    background-color: #00A29A;
+    color:#fff;
+    width:calc(100% - 64px);
+    height:40px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    bottom:16px;
+}

@@ -41,20 +41,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 
-import { LoginComponent } from './layout/login/login.component';
-import { MaintopComponent } from './layout/maintop/maintop.component';
-import { SubtopComponent } from './layout/subtop/subtop.component';
-import { MainPageComponent } from './page/main-page/main-page.component';
-import { ProgramComponent } from './page/program/program.component';
+import { BackComponent } from './layout/back/back.component';
+import { LoginComponent } from './page/login/login.component';
+import { PlaceComponent } from './page/place/place.component';
+import { MarketComponent } from './page/market/market.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BackComponent,
     LoginComponent,
-    MaintopComponent,
-    SubtopComponent,
-    MainPageComponent,
-    ProgramComponent,
+    PlaceComponent,
+    MarketComponent,
   ],
   imports: [
     BrowserModule,

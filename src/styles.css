@@ -1,44 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 * { padding:0; margin:0;}
-html,
-body {
-  width:100%;  
-  height: 100%;
+html, body { width:100%;height: 100%; }
+@font-face {
+  src: url(./assets/font/NanumSquareR.otf);
+  font-family: 'nanum';
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    padding:0 32px;
+    background-color:#F7F9FA;
+    position: relative;
 }
 li {list-style: none;}
-.wholeWrap {
-  padding:1rem;
-}
+
 .hidden {
   display: none;
 }
-
-/* main top */
-.maintop {
-  width:100%;
-  height: 50px;
-  line-height: 50px;
-  background-color: #1abc9c;
-  position: relative;
-}
-.backMain {
-  color:#fff;
-}
-.backMain .mat-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 1.5rem;
-}
-
-
-/* sub top */
-.subtop {
-  height: 50px;
-  line-height: 50px;
-  background-color: #2980b9;
-  position: relative;
+.nanum {
+  font-family: 'nanum' , sans-serif;
 }

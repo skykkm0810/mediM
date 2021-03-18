@@ -1,0 +1,117 @@
+p {margin:0;}
+img {
+    width:100%;
+    height:calc(100% - 2px);
+    border-radius: 8px 0 0 8px;
+}
+.wrap {
+    padding-top: 36px;
+}
+.wrap h2 {
+    text-indent: 15px;
+    margin:0;
+    color:#555555;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 5px;
+}
+.placeBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+}
+.placeBox > div {
+    height:80px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    background-color: #fff;
+    border-radius:8px;
+    border: 1px solid #c4c4c4;
+}
+.placeBox > div .gage {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.placeBox > div .gage p.nanum {
+    font-weight: bold;
+    padding:10px 0;
+}
+.placeBox > div .gage p.nanum .remain {
+    float: right;
+}
+.placeBox > div .gage .bar {
+    width:100%;
+    height:20px;
+    background-color: #c4c4c4;
+}
+.placeBox > div .gage .bar span {
+    display: block;
+    height:100%;
+}
+.btnBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom:0;
+    height:63px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding:0 32px;
+}
+.btnBox button {
+    width:100%;
+    height:40px;
+    background-color: #00A29A;
+    color:#fff;
+    font-weight: bold;
+}
+.show {
+    width:calc(100% - 48px); 
+    position: absolute;
+    left:24px;
+    bottom:0;
+    box-sizing: border-box;
+    padding:20px 24px;
+    background-color: #fff;
+    border-radius: 16px 16px 0 0;
+}
+.show .title {
+    padding-bottom:10px ;
+    font-weight: bold;
+    font-size: 24px;
+    color:#00A29A;
+}
+.show .closeBtn {
+    width:24px;
+    height:24px;
+    background: url(../../../assets/image/Vector.png) no-repeat center center / cover;
+    position: absolute;
+    right:24px;
+    top:20px;
+}
+.show_bar {
+    margin-top: 16px;
+    height:16px;
+    background-color: #c4c4c4;
+}
+.gagebar {
+    display: block;
+    height:100%;
+}
+.show_remain {
+    font-size: 16px;
+    text-align: right;
+    font-weight: bold;
+    padding:10px 0;
+}
+.alarm {
+    color:#555555;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}

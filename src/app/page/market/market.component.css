@@ -1,0 +1,13 @@
+.box {
+    padding-top:100px;
+    text-align: center;
+}
+.box img {
+    width:85px;
+}
+.box p {
+    padding:60px 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#555555;
+}

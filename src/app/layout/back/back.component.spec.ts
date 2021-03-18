@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubtopComponent } from './subtop.component';
+import { BackComponent } from './back.component';
 
-describe('SubtopComponent', () => {
-  let component: SubtopComponent;
-  let fixture: ComponentFixture<SubtopComponent>;
+describe('BackComponent', () => {
+  let component: BackComponent;
+  let fixture: ComponentFixture<BackComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SubtopComponent ]
+      declarations: [ BackComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SubtopComponent);
+    fixture = TestBed.createComponent(BackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
